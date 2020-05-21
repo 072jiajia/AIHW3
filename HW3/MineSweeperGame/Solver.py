@@ -56,9 +56,6 @@ class Solver(Board):
                 # when unassigned variable is small enough,
                 # generate clauses and add it to KB
                 if len(Unassignedlist) < 10:
-                    print('It might be a stuck game')
-                    print('considering the number of mines...')
-                    print('(it might take some time)')
                     Count = 0
                     for i in range(self.size[0]):
                         for j in range(self.size[1]):
